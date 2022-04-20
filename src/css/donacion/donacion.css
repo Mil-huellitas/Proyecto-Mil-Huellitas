@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --blue-dark-color: #1B3C5A;
+    --blue-medium-color:#2970CA;
+    --blue-light:#D5E3FF;
+    --green-light-color:#C4EDB2;
+    --coral-color:#FAC0BD;
+    --dark-color:#191919;
+    --white-color:#FFFFFF;
+    --aleo-font: "Aleo", serif;
+    --poppins-font: "Poppins", sans-serif;
+    --opensans-font:"Open Sans",sans-serif;
+    --Degrade-nav-menu-color: linear-gradient(180deg, rgba(7, 36, 62, 0.9) 32.33%, rgba(42, 95, 145, 0.9) 92.71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--poppins-font);
+}
+
+main{
+    display: grid;
+}
+
+.banner_Donacion{
+    background: linear-gradient(90deg, rgba(53, 166, 204, 0.27) 0%, rgba(53, 166, 204, 0.03) 100%), url(../../assets/img/donacion/img_banner_pc.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0;
+    color: var(--white-color);
+    padding: 10px 5px;
+    min-height: 122px;
+    width: 100%;
+    position: relative;
+}
+
+.banner_Donacion h3 , .banner_Donacion h2 ,.banner_Donacion h1{
+    font-style: normal;
+    font-weight: 500;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+}
+
+.banner_Donacion h3{
+    font-size: 16px;
+    top:30px;
+    left:19px
+}
+
+.banner_Donacion h2{
+    font-size: 20px;
+    top: 48px;
+    left: 19px;
+}
+
+.banner_Donacion h1{
+    font-size: 34px;
+    top: 65px;
+}
+
+.title_information{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    color: var(--blue-medium-color);
+    margin: 10px auto;
+}
+
+.information{
+    width:90%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+.information img{
+    width: 100%;
+    max-width: 262.68px;
+    border-radius: 15px;   
+    margin: 5px auto 5px; 
+}
+
+.information__text{
+    width: 100%;
+    text-align: justify;
+    font-family: var(--opensans-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--dark-color);
+    display: grid;
+    place-items: center;
+    margin: 10px auto;
+}
+
+.information__text h4{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--blue-medium-color);
+    margin: 8px;
+}
+
+.buttons{
+    border: 2px dashed var(--blue-medium-color);
+    border-left: none;
+    border-right: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 1em;
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    padding: 3px;
+    text-align: center;
+    width: 87px;
+    height: 38px;
+    font-size:10px;
+    font-weight:400;
+    font-family: var(--opensans-font);
+    background-color: var(--blue-medium-color);
+    border-radius: 10px;
+    border: none;
+}
+
+.buttons .button_active{
+    background-color: var(--blue-dark-color);
+}
+
+.buttons a{
+    color: var(--white-color);
+}
+
+.galerry_doneco{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    row-gap: 50px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.background_footprints{
+    position:absolute;
+    left: 10px;
+}
+
+.Container_Doneco__9{
+    grid-column: 1/3;
+}
+
+.Container_Doneco{
+    position: relative;
+}
+.Card_Doneco{
+    outline: 16px solid var(--blue-light);
+    width: 75.5px;
+    border-radius: 50%;
+}
+
+.Card_Doneco__text{
+    width: 78.3px;
+}
+
+.Card_Doneco__text__donar{
+    width:73.43px;
+    position: absolute;
+    top: -19px;
+    left: 3px;
+}
+
+.Card_Doneco__text__valor{
+    width:78.28px;
+    position: absolute;
+    top: 63px;
+}
+
