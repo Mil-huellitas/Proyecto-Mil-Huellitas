@@ -117,27 +117,104 @@ main {
 
 
 /*Estilos banner*/
-.index-banner img{
+.index-banner img {
     width: 100%;
 }
 
-.index-banner{
+.index-banner {
     display: none;
 }
 
 
 
+/*buttons*/
+
+.index_buttons {
+    border: 2px solid red;
+    width: 90%;
+    height: 500px;
+    margin:  0 auto;
+    display: grid;
+    grid-template-areas:
+        'material economica'
+        'apadrinamiento emprendimiento';
+
+    grid-auto-rows: 50%;
+    align-items: center;
+    gap: 10px;
+}
+
+
+button {
+
+    background-size: cover;
+    background-position: center;
+
+    margin: 0 auto;
+    cursor: pointer;
+    width: 100%;
+    height: 90%;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: #ffffff;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
 
 
 
 
+#index-btn-D-material {
+    background-image: url(../../assets/img/index/index-btn-D.material.png);
+    grid-area: material;
+}
+
+#index-btn-D-material:hover {
+    background-image: url(../../assets/img/index/index-btn-D.material-hover.png);
+}
 
 
+#index-btn-D-economica {
+    background-image: url(../../assets/img/index/index-btn-D.economica.png);
+    grid-area: economica;
+}
+
+#index-btn-D-economica:hover {
+    background-image: url(../../assets/img/index/index-btn-D.economica-hover.png);
+}
 
 
+#index-btn-Apadrinamiento {
+    background-image: url(../../assets/img/index/index-btn-Apadrinamiento.png);
+    grid-area: apadrinamiento;
+}
+
+#index-btn-Apadrinamiento:hover {
+    background-image: url(../../assets/img/index/index-btn-Apadrinamiento-hover.png);
+}
 
 
+#index-btn-emprendimiento {
+    background-image: url(../../assets/img/index/index-btn-A.emprendimiento.png);
+    grid-area: emprendimiento;
+}
 
+#index-btn-emprendimiento:hover {
+    background-image: url(../../assets/img/index/index-btn-A.emprendimiento-hover.png);
+}
 
 
 
@@ -188,8 +265,8 @@ main {
 
 
     /*estilos banner*/
-    .index-banner{
+    .index-banner {
         display: initial;
     }
-    
+
 }
