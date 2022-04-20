@@ -116,6 +116,31 @@ main {
 }
 
 
+/*Estilos banner*/
+.index-banner img{
+    width: 100%;
+}
+
+.index-banner{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*responsive desktop navbar*/
 
@@ -158,4 +183,13 @@ main {
     .nav_menu-items li a {
         font-size: 1rem;
     }
+
+
+
+
+    /*estilos banner*/
+    .index-banner{
+        display: initial;
+    }
+    
 }
