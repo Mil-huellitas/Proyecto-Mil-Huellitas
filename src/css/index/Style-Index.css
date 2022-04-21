@@ -217,7 +217,13 @@ button:hover {
 }
 
 
+@media screen and (min-width: 1024px) {
 
+    .index_buttons{
+        display: none;
+    }
+
+}
 
 /*responsive desktop navbar*/
 
