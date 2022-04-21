@@ -561,7 +561,16 @@ footer > .social-media {
     font-size: 13px;
     border-radius:5px 5px 0 0;
     transition: all 500ms;
+    opacity: 0.8;
 }
+
+.label-history:hover, .label-description:hover{
+    opacity: 1;
+}
+
+.label-description:hover{
+    opacity: 1;}
+
 
 #history:checked ~ .info-mascota{
     display: none;
@@ -573,10 +582,16 @@ footer > .social-media {
 
 #history:checked ~ .label-history{
     font-size: 18px;
+    opacity: 1;
 }
 
 #description:checked ~ .label-description{
     font-size: 18px;
+    opacity: 1;
+}
+
+#description:not(checked) ~ .label-description{
+    opacity: 0.8;
 }
 
 .info-mascota{
@@ -861,6 +876,7 @@ footer > .social-media {
     margin-top: 20px;
     display: none;
     text-align: justify;
+    animation: pet-aparecer 1s forwards;
 }
 
 #responsabilities-radio:checked ~ .responsabilities{
@@ -869,6 +885,23 @@ footer > .social-media {
 
 #qualities-radio:checked ~ .qualities{
     display: block;
+}
+
+label img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
+
+.bton-cat:hover{
+    background-color: var(--blue-dark-color);
+    box-shadow: 4px 4px 7px var(--dark-color);
+    transform: translateY(2px);
+    transition-duration: 0.5s;
+}
+
+.bton-cat:hover img{
+    transition-duration: 0.5s;
+    transform: scale(1.1);
 }
 
 
@@ -1714,12 +1747,12 @@ textarea{
 
      .label-description{
         padding: 6px 40px 5px;
-        font-size:18px;
+        font-size:20px;
     }
     
     .label-history{
         padding: 6px 40px 5px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     #adoption-form #locate, #adoption-form input{
