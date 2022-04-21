@@ -930,6 +930,9 @@ textarea{
     margin: 28px 0;
 }
 
+.modalPicture img{
+    width: 150px;
+}
 
 @media screen and (min-width: 768px){
 
