@@ -615,9 +615,9 @@ footer > .social-media {
     padding: 0px 10px;
 }
 
-/*input[type=radio]{
+#adoption-kirara input[type=radio], .container-grid input[type=radio]{
     display: none;
-}*/
+}
 
 
 .slider-galery-pet .container{
@@ -782,33 +782,76 @@ footer > .social-media {
     z-index: 2;
 }
 
-.responsabilities, .qualities{
-    display: none;
+#adoption-process{
+    margin-bottom: 40px;
 }
 
-.button-responsabilities, .button-qualities{
-    background-color: #09ff00;
+.label-responsabilities img, .label-qualities img{
+    width: 100%;
+}
+
+.dropdown-responsabilities, .dropdown-qualities{
+    padding: 10px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.responsabilities ul, .qualities ul{
+    padding-left: 4%;
+}
+
+.responsabilities, .qualities{
+    margin-top: 20px;
+    display: none;
+    text-align: justify;
+}
+
+#responsabilities-radio:checked ~ .responsabilities{
+    display: block;
+}
+
+#qualities-radio:checked ~ .qualities{
+    display: block;
+}
+
+
+/*.button-responsabilities, .button-qualities{
     width: 300px;
+    max-width: 400px;
     height: 80px;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .button-responsabilities img, .button-qualities img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 80px;
 }
 
 .layer{
-    position: absolute;
-    background: rgba(13, 3, 124, 0.54);
+    background: linear-gradient(to left, #191919a3, #19191968, #1919190e);
+    height: 80%;
+    position: relative;
     color: white;
-    margin-top: -50px;
+    margin-top: -80px;
+    margin-left: auto;
     transition: all 500ms ease-out;
     opacity: 1;
     visibility: visible;
-    text-align: center;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-right: 10px;
+    text-shadow: 1px 1px 1px var(--dark-color);
 }
+
+.layer p{
+    margin-top: 10px;
+    width: 50%;
+    text-align: end;
+}*/
+
+
 
 /*Formulario--------------------------------*/
 
@@ -1401,6 +1444,49 @@ textarea{
     .h2-ocult{
         display: none;
     }
+
+    #adoption-process{
+        margin-bottom: 40px;
+    }
+    
+    .dropdown-responsabilities, .dropdown-qualities{
+        padding: 40px;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .responsabilities, .qualities{
+        margin-top: 20px;
+        display: none;
+        text-align: justify;
+    }
+    
+    .dropdown-information{
+        background-color: #C4EDB2;
+        padding: 0 60px;
+        display: grid;
+        column-gap: 5%;
+        grid-template-columns: 47.5% 47.5%;
+        grid-template-areas: "dropdown-responsabilities dropdown-qualities";
+    }
+    
+    .label-responsabilities, .label-qualities{
+        width: 80%;
+        background-color: #09ff00;
+    }
+    
+    .label-responsabilities img, .label-qualities img{
+        width: 100%;
+    }
+    
+    #responsabilities-radio:checked ~ .responsabilities{
+        display: block;
+    }
+    
+    #qualities-radio:checked ~ .qualities{
+        display: block;
+    }
+    
 
     /*Formulary------------------*/
     #main-adoption-form{
