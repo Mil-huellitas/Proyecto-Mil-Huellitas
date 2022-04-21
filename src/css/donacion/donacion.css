@@ -153,9 +153,57 @@ main{
     position: relative;
 }
 
-.background_footprints{
+.background_footprints_one{
     position:absolute;
-    left: 10px;
+    left: 7px;
+    top: 35px;
+}
+
+.background_footprints_two{
+    position:absolute;
+    left:143px;
+    top: 85px;
+}
+
+.background_footprints_three{
+    position:absolute;
+    left:255px;
+    top: 45px;
+}
+
+.background_footprints_four{
+    position:absolute;
+    left:118px;
+    top: 135px;
+    z-index: 1;
+}
+
+.background_footprints_five{
+    position:absolute;
+    left:198px;
+    top: 555px;
+    z-index: 1;
+}
+
+.background_footprints_six{
+    position:absolute;
+    left:98px;
+    top: 580px;
+    z-index: 1;
+}
+
+.background_footprints_seven{
+    position:absolute;
+    left:173px;
+    top: 175px;
+    z-index: 1;
+}
+
+.background_footprints_eight{
+    position:absolute;
+    left:13px;
+    top: 305px;
+    z-index: 1;
 }
 
 .Container_Doneco__9{
