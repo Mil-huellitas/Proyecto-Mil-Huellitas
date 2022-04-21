@@ -540,7 +540,7 @@ footer > .social-media {
 
 .adopt-pet{
     border-radius: 10px;
-    height: 350px;
+    height: 300px;
     box-shadow: 1px 2px 4px #191919;
 }
 
@@ -606,6 +606,55 @@ footer > .social-media {
     text-align: left;
 }
 
+@media screen and (min-width: 320px) and (max-width:364px){
+    .history-pet{
+        display: none;
+        background-color: var(--blue-dark-color);
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 2px;
+        height: 460px;
+    }
+
+    .history-pet .folder-pet{
+        background-color: var(--blue-light);
+        margin:0 10px;
+        height: 440px;
+        padding: 10px;
+        list-style: none;
+        border-radius: 10px;
+        text-align: left;
+    }
+    
+    .folder-pet{
+        background-color: var(--blue-light);
+        margin:0 10px;
+        height: 380px;
+        padding: 10px;
+        list-style: none;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    .info-mascota{
+        margin-top: 2px;
+        background-color: var(--blue-medium-color);
+        border-radius: 10px;
+        padding: 10px;
+        height: 400px;
+    }
+
+    .step1 .btn-enviar i{
+        font-size: 28px;
+        padding: 15px 8px 5px 12px;
+    }
+
+    .step2 .btn-enviar i{
+        font-size: 28px;
+        padding: 6px 8px 4px 2px;
+    }
+}
+
 .slider-galery-pet{
     max-width: 1000px;
     height: 300px;
@@ -613,6 +662,14 @@ footer > .social-media {
     align-items: center;
     justify-content: center;
     padding: 0px 10px;
+}
+
+.container-pet{
+    background: url(../../assets/img/adopcion/bg-bolitas.svg);
+}
+
+#adoption-process{
+    background: url(../../assets/img/adopcion/bd-documents.svg);
 }
 
 #adoption-kirara input[type=radio], .container-grid input[type=radio]{
@@ -773,7 +830,7 @@ footer > .social-media {
 
 .btn-enviar i, #btn-enviar i{
     border-radius: 50%;
-    padding: 7px 10px 5px 6px;
+    padding: 7px 4px 5px 8px;
     border: 4px solid var(--blue-light);
     font-size: 20px;
     background-color: var(--blue-dark-color);
@@ -1149,11 +1206,15 @@ textarea{
     }
 
     #pet{
-        align-items: center;
+        align-items: flex-end;
         display: grid;
         column-gap: 2%;
         grid-template-columns: 38% 60%;
         grid-template-areas:"img-pet pet-resumen";
+    }
+
+    .img-pet img{
+        margin-bottom: 15px;
     }
 
     #adoption-process .bg-documents{
@@ -1180,7 +1241,7 @@ textarea{
         padding-top: 10px;
         display: grid;
         column-gap: 20px;
-        grid-template-columns: 42% auto;
+        grid-template-columns: 44% auto;
         grid-template-areas:"step2 formulario";
     }
 
@@ -1193,6 +1254,19 @@ textarea{
     
     .step1{
         padding-top: 5px;
+    }
+
+    .btn-enviar button, #btn-enviar button{
+        padding: 5px 0px;
+        margin: 0 0 0 18px;
+    }
+
+    .process-step2 button{
+        padding: 5px 40px;
+    }
+
+    .process-step2 i{
+        padding: 6px 8px 4px 4px;
     }
 
     /*formulary----------------*/
@@ -1406,7 +1480,7 @@ textarea{
     #pet{
         display: grid;
         column-gap: 2%;
-        grid-template-columns: 38% 60%;
+        grid-template-columns: 35% 60%;
         grid-template-areas:"img-pet pet-resumen";
     }
 
@@ -1462,7 +1536,6 @@ textarea{
     }
     
     .dropdown-information{
-        background-color: #C4EDB2;
         padding: 0 60px;
         display: grid;
         column-gap: 5%;
@@ -1472,7 +1545,6 @@ textarea{
     
     .label-responsabilities, .label-qualities{
         width: 80%;
-        background-color: #09ff00;
     }
     
     .label-responsabilities img, .label-qualities img{
@@ -1522,6 +1594,15 @@ textarea{
         margin: 40px 0;
     }
 
+    .ocult{
+        text-align: center;
+    }
+
+    #adoption-process{
+        margin-top: 40px;
+    }
+
+    
     /*footer-----------------*/
 
      footer{
@@ -1575,19 +1656,20 @@ textarea{
     }
 
     #pet{
-        align-items: center;
+        justify-content: center;
+        align-items: flex-end;
         display: grid;
         column-gap: 3%;
-        grid-template-columns: 38% 60%;
+        grid-template-columns: 32% 50%;
         grid-template-areas:"img-pet pet-resumen";
     }
 
     .info-mascota{
-        height: 370px;
+        height: 380px;
     }
     
     .history-pet{
-        height: 370px;
+        height: 380px;
     }
 
     #adoption-process .bg-documents{
@@ -1600,6 +1682,24 @@ textarea{
         margin: auto;
         height: 380px;
     }
+
+    .img-pet img{
+        margin-bottom: 0;
+    }
+
+    .slider-galery-pet{
+        max-width: 85%;
+    }
+
+    .slider-galery-pet .container{
+        width: 85%;
+    }
+
+    .slider-galery-pet .card img{
+        background-color: #FAC0BD;
+        width: 25%;
+    }
+
 
     .info-pet{
         padding-top: 10px;
