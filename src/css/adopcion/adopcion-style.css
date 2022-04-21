@@ -619,6 +619,7 @@ footer > .social-media {
     display: none;
 }*/
 
+
 .slider-galery-pet .container{
     width: 100%;
     max-width: 800px;
@@ -817,17 +818,20 @@ footer > .social-media {
                   "main" auto
                   "footer" auto;
 }
-main{
-    padding: 5px;
-}
 
 #main-adoption-form{
     width: 100%;
+    padding: 8px;
+}
+
+#main-adoption-form #adoption-banner{
+    background-color: #09ff00;
 }
 
 #adoption-form{
+    margin-top:-95px;
     border: 3px solid var(--blue-light);
-    padding: 5px;
+    padding: 10px;
     width: 100%;
 }
 
@@ -862,22 +866,47 @@ main{
 }
 
 #adoption-form p{
-    margin: 10px 0 5px;
     width: 100%;
 }
 
-.adoption-form-group{
-    width: 75px;
-    margin: 0 auto;
-    padding: 0 5px;
+textarea{
+    margin-top: 10px;
 }
 
+.adoption-form-group{
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
+.adoption-form-group div{
+    display: flex;
+    align-items: center;
+}
 
+.question-form{
+    margin: 25px 0;  
+}
 
+#adoption-form #persons{
+    background-color: var(--blue-light);
+    border: 1.4px solid #8caef1;
+    width: 30px;
+    margin: 0 20px;
+}
+
+#adoption-form #locate{
+    background-color: var(--blue-light);
+    border: 1.4px solid #8caef1;
+    margin-left: 20px;
+}
+
+#adoption-form .label-form{
+    margin: 1px 5px;
+}
 
 @media screen and (min-width: 768px){
-
 
     /*Adopción-----------------------*/
 
@@ -1187,6 +1216,36 @@ main{
 
     .h2-ocult{
         display: none;
+    }
+
+    /*Formulary------------------*/
+    #main-adoption-form{
+        width: 100%;
+        padding: 20px 18%;
+        background: url(../../assets/img/adopcion/bg-bolitas.svg);
+    }
+
+    #adoption-form{
+        padding: 25px 35px;
+        background-color: var(--white-color);
+    }
+
+    .question-form{
+        margin: 40px 0;  
+    }
+
+    #adoption-form p{
+        margin-bottom: 10px;
+    }
+
+    #adoption-form #locate{
+        font-size: 17px;
+    }
+
+    #adoption-form #locate:focus, #adoption-form textarea:focus{
+        border: 2px solid #2970CA;
+        outline: none;
+        box-shadow: 2px 2px 4px var(--blue-medium-color);
     }
 
     /*footer-----------------*/
