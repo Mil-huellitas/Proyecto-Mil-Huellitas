@@ -98,7 +98,6 @@ main{
     color: var(--dark-color);
     display: grid;
     place-items: center;
-    margin: 10px auto;
 }
 
 .information__text h4{
@@ -106,7 +105,13 @@ main{
     font-size: 13px;
     line-height: 18px;
     color: var(--blue-medium-color);
-    margin: 8px;
+    margin: 5px auto;
+}
+
+.data_text{
+    display: grid;
+    place-items: center;
+    margin: 0 auto 10px;
 }
 
 .buttons{
@@ -153,6 +158,10 @@ main{
     position: relative;
 }
 
+.Container_Doneco__nine{
+    grid-column: 1/3;
+}
+
 .background_footprints_one{
     position:absolute;
     left: 7px;
@@ -167,7 +176,7 @@ main{
 
 .background_footprints_three{
     position:absolute;
-    left:255px;
+    right:11px;
     top: 45px;
 }
 
@@ -180,21 +189,21 @@ main{
 
 .background_footprints_five{
     position:absolute;
-    left:198px;
+    right: 90px;
     top: 555px;
     z-index: 1;
 }
 
 .background_footprints_six{
     position:absolute;
-    left:98px;
+    left:94px;
     top: 580px;
     z-index: 1;
 }
 
 .background_footprints_seven{
     position:absolute;
-    left:173px;
+    right:122px;
     top: 175px;
     z-index: 1;
 }
@@ -206,13 +215,21 @@ main{
     z-index: 1;
 }
 
-.Container_Doneco__9{
-    grid-column: 1/3;
+.background_footprints_nine, .background_footprints_ten, .background_footprints_eleven,.background_footprints_twelve{
+    visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    top: 1px;
+}
+
+.background_footprints_twelve{
+    width: 320px;
 }
 
 .Container_Doneco{
     position: relative;
 }
+
 .Card_Doneco{
     outline: 16px solid var(--blue-light);
     width: 75.5px;
@@ -230,9 +247,274 @@ main{
     left: 3px;
 }
 
-.Card_Doneco__text__valor{
+.Card_Doneco__text__value{
     width:78.28px;
     position: absolute;
     top: 63px;
 }
 
+@media screen and (min-width:768px){
+    .banner_Donacion{
+        min-height: 283px;
+    }
+
+    .banner_Donacion h3{
+        font-size: 32px;
+        top:80px;
+        left:64.66px
+    }
+
+    .banner_Donacion h2{
+        font-size: 40px;
+        top: 110px;
+        left: 68.73px;
+    }
+
+    .banner_Donacion h1{
+        font-size: 71px;
+        top: 139px;
+        left: 30px;
+    }
+
+    .title_information{
+        font-size: 21px;
+        margin: 20px auto 10px;
+    }
+
+    .information{
+        width:90%;
+        grid-template-areas:"img textgeneral"
+        "datatext datatext";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img_information{
+        grid-area: img;
+    }
+
+    .information img{
+        max-width: 312px;
+        border-radius: 10px;   
+        margin: 5px auto 5px; 
+    }
+
+    .information__text{
+        font-size: 14px;
+        grid-row: 1/3;
+        line-height : 19px;
+    }
+
+    .information__text h4{
+        font-size: 21px;
+        margin: 10px auto;
+    }
+
+    .general_text{
+        grid-area: textgeneral;
+    }
+
+    .data_text{
+        grid-area:datatext;
+        margin-bottom: 20px;
+    }
+
+    .buttons button {
+        width: 175px;
+        height: 31px;
+        font-size:14px;
+    }
+
+    .galerry_doneco{
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 90px;
+        margin: 50px 0;
+    }
+
+    .Container_Doneco__nine{
+        grid-column: 3;
+    }
+
+    .background_footprints_one, .background_footprints_two, .background_footprints_three, .background_footprints_four,.background_footprints_five,.background_footprints_six,.background_footprints_seven,.background_footprints_eight
+    {
+        visibility: hidden;
+    }
+
+    .background_footprints_nine{
+        visibility: visible;
+        z-index: 1;
+        top:60px;
+        left: 6px;
+    } 
+    .background_footprints_ten{
+        visibility: visible;
+        top:0px;
+        left: 186px;
+    }
+    .background_footprints_eleven{
+        visibility: visible;
+        width: 335px;
+        z-index: 1;
+        top:25px;
+        right: 0px;
+    }
+    
+    .background_footprints_twelve{
+        visibility: visible;
+        width:478.78px;
+        top: 257px;
+        right: 13px;
+    }
+
+    .Card_Doneco{
+        outline: 24.6px solid var(--blue-light);
+        width: 120.1px;
+    }
+
+    .Container_Doneco__text{
+        width: 121.19px;
+    }
+
+    .Card_Doneco__text__donar{
+        width:110.45px;
+        top: -28px;
+        left: 7px;
+    }
+
+    .Card_Doneco__text__value{
+        width:113.45px;
+        top: 100px;
+        left: 4px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .banner_Donacion{
+        min-height: 390px;
+    }
+
+    .banner_Donacion h3{
+        font-size: 43.3px;
+        top:120px;
+        left:94.66px
+    }
+
+    .banner_Donacion h2{
+        font-size: 54.2px;
+        top: 165px;
+        left: 98.73px;
+    }
+
+    .banner_Donacion h1{
+        font-size: 97.5px;
+        top: 205px;
+        left: 50px;
+    }
+
+    .title_information{
+        font-size: 27.1px;
+        margin: 30px auto 20px;
+    }
+
+    .information{
+        width:95%;
+        grid-template-areas:"img textgeneral"
+        "img datatext";
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+    }
+
+    .img_information{
+        grid-area: img;
+    }
+
+    .information img{
+        max-width:600px;
+        border-radius: 10px;   
+        margin: 5px auto; 
+    }
+
+    .information__text{
+        font-size: 16px;
+        grid-row: 1/3;
+        line-height : 21px;
+    }
+
+    .information__text h4{
+        font-size:18px;
+        margin: 10px auto;
+    }
+
+    .general_text{
+        grid-area: textgeneral;
+    }
+
+    .data_text{
+        grid-area:datatext;
+        margin-bottom: 20px;
+    }
+
+    .buttons button {
+        width: 233px;
+        height: 31px;
+        font-size:16px;
+    }
+
+    .background_footprints_one, .background_footprints_two, .background_footprints_three, .background_footprints_four,.background_footprints_five,.background_footprints_six,.background_footprints_seven,.background_footprints_eight
+    {
+        visibility: hidden;
+    }
+
+    .background_footprints_nine{
+        visibility: visible;
+        z-index: 1;
+        top:90px;
+        left: 18px;
+        height: 600px;
+    } 
+    .background_footprints_ten{
+        visibility: visible;
+        height: 660px;
+        top: 36px;
+        left: 258px;
+    }
+    .background_footprints_eleven{
+        visibility: visible;
+        width: 335px;
+        z-index: 1;
+        top:25px;
+        right: 0px;
+    }
+    
+    .background_footprints_twelve{
+        visibility: visible;
+        width:478.78px;
+        top: 257px;
+        right: 13px;
+    }
+
+    .Card_Doneco{
+        outline: 33.9px solid var(--blue-light);
+        width:165.2px;
+    }
+
+    .Container_Doneco__text{
+        width: 121.19px;
+    }
+
+    .Card_Doneco__text__donar{
+        width:144.45px;
+        top: -37px;
+        left: 13px;
+    }
+
+    .Card_Doneco__text__value{
+        width:147.45px;
+        top: 140px;
+        left: 8px;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+}
