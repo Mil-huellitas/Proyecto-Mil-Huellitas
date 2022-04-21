@@ -913,6 +913,24 @@ textarea{
     box-shadow: 1px 1px 4px var(--blue-medium-color);
 }
 
+.user-information .form-group{
+    margin-bottom: 10px;
+}
+
+.dog-form{
+    display: flex;
+    margin: auto;
+}
+
+.user-information{
+    margin: 30px 0;
+}
+
+.article-form{
+    margin: 28px 0;
+}
+
+
 @media screen and (min-width: 768px){
 
     /*Adopción-----------------------*/
@@ -1027,7 +1045,7 @@ textarea{
     
     #main-adoption-form{
         width: 100%;
-        padding: 20px 12%;
+        padding: 20px 10.9%;
         background: url(../../assets/img/adopcion/bg-bolitas.svg);
     }
 
@@ -1049,7 +1067,27 @@ textarea{
         font-size: 15px;
     }
 
-    
+    .user-information{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 40px 0;
+    }
+
+    .user-information .form-group{
+        width: 48%;
+        margin-bottom: 10px;
+    }
+
+    .dog-form{
+        float: left;
+        height: 200px;
+        margin: 0 15px;
+    }
+
+    .article-form{
+        margin-top: 40px;
+    }
 
     /*footer-------------------------*/
 
@@ -1278,6 +1316,15 @@ textarea{
         font-size: 15px;
     }
 
+    .dog-form{
+        height: 250px;
+        margin: 0 15px;
+    }
+
+    .article-form{
+        margin: 40px 0;
+    }
+
     /*footer-----------------*/
 
      footer{
@@ -1380,5 +1427,14 @@ textarea{
 
     #adoption-form #locate, #adoption-form input{
         font-size: 17px;
+    }
+
+    .dog-form{
+        height: 300px;
+        margin: 0 15px;
+    }
+
+    .article-form{
+        margin: 40px 0;
     }
  }
