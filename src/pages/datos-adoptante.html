@@ -34,12 +34,13 @@
 
         </nav>
     </header>
-    
-    <main id="main-adoption-form">
-        <section id="adoption-banner">
-            <img src="../assets/img/adopcion/adoption-form.svg" alt="">
-        </section>
 
+    <section id="adoption-banner">
+            <img src="../assets/img/adopcion/adoption-form.svg" alt="">
+    </section>
+
+    <main id="main-adoption-form">
+        
         <section id="adoption-form">
 
             <h2>Formulario de adopción</h2>
@@ -83,10 +84,15 @@
             <p>*En caso de ser arrendador, el dueño del inmueble tiene conocimiento de la posible adopción y dio autorización para llevarla a cabo?</p>
 
             <div class="adoption-form-group">
-                <label form="selection"></label>
-                <input name="si" id="si" type="radio">Si 
-                <input name="no" id="no" type="radio">No
-            </div>
+                <div>
+                    <label for="selection" class="label-form">Si</label>
+                    <input name="selection_primary" type="radio">
+                </div>
+                <div>
+                    <label for="selection" class="label-form">No</label>
+                    <input name="selection_primary" type="radio">
+                </div>
+            </div></div>
 
             <div class="form-group">
                 <label for="direction">Dirección</label>
@@ -117,10 +123,15 @@
             <p>¿Teniendo en cuenta lo anterior se encuentra usted en la capacidad emocional y económica para hacerse cargo de los gastos de atención veterinaria que conlleve la mascota?    </p>
 
             <div class="adoption-form-group">
-                <label form="selection"></label>
-                <input name="si" id="si" type="radio">Si 
-                <input name="no" id="no" type="radio">No
-            </div>
+                <div>
+                    <label for="selection" class="label-form">Si</label>
+                    <input name="selection_primary" type="radio">
+                </div>
+                <div>
+                    <label for="selection" class="label-form">No</label>
+                    <input name="selection_primary" type="radio">
+                </div>
+            </div></div>
 
             <div class="btn-enviar">
                 <i class="fa-solid fa-paper-plane"></i>

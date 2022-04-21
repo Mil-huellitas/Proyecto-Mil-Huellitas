@@ -741,7 +741,7 @@ footer > .social-media {
     margin-bottom: 15px;
 }
 
-.form-group input{
+.form-group input, #home{
     width: 100%;
     border-radius: 5px;
     background-color: var(--blue-light);
@@ -835,11 +835,12 @@ footer > .social-media {
     width: 100%;
 }
 
-#adoption-form textarea{
+#adoption-form textarea, #home{
     width: 100%;
     background-color: var(--blue-light);
     border: 1.4px solid #8caef1;
 }
+
 
 #adoption-form table{
     width: 100%;
@@ -904,6 +905,12 @@ textarea{
 
 #adoption-form .label-form{
     margin: 1px 5px;
+}
+
+#adoption-form #locate:focus, #adoption-form textarea:focus, #adoption-form input:focus{
+    border: 2px solid #296fca;
+    outline: none;
+    box-shadow: 1px 1px 4px var(--blue-medium-color);
 }
 
 @media screen and (min-width: 768px){
@@ -1015,6 +1022,34 @@ textarea{
     .step1{
         padding-top: 5px;
     }
+
+    /*formulary----------------*/
+    
+    #main-adoption-form{
+        width: 100%;
+        padding: 20px 12%;
+        background: url(../../assets/img/adopcion/bg-bolitas.svg);
+    }
+
+    #adoption-form{
+        padding: 20px 28px;
+        background-color: var(--white-color);
+        box-shadow: 2px 2px 6px #1919198f, -2px -2px 8px #1919198f;
+    }
+
+    .question-form{
+        margin: 34px 0;  
+    }
+
+    #adoption-form p{
+        margin-bottom: 7px;
+    }
+
+    #adoption-form #locate, #adoption-form input{
+        font-size: 15px;
+    }
+
+    
 
     /*footer-------------------------*/
 
@@ -1228,6 +1263,7 @@ textarea{
     #adoption-form{
         padding: 25px 35px;
         background-color: var(--white-color);
+        box-shadow: 2px 2px 6px #1919198f, -2px -2px 8px #1919198f;
     }
 
     .question-form{
@@ -1238,14 +1274,8 @@ textarea{
         margin-bottom: 10px;
     }
 
-    #adoption-form #locate{
-        font-size: 17px;
-    }
-
-    #adoption-form #locate:focus, #adoption-form textarea:focus{
-        border: 2px solid #2970CA;
-        outline: none;
-        box-shadow: 2px 2px 4px var(--blue-medium-color);
+    #adoption-form #locate, #adoption-form input{
+        font-size: 15px;
     }
 
     /*footer-----------------*/
@@ -1346,5 +1376,9 @@ textarea{
     .label-history{
         padding: 6px 40px 5px;
         font-size: 18px;
+    }
+
+    #adoption-form #locate, #adoption-form input{
+        font-size: 17px;
     }
  }
