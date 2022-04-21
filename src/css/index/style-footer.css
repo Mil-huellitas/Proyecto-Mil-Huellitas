@@ -1,0 +1,153 @@
+footer {
+    width: 100%;
+    background-color: var(--blue-dark-color);
+    padding: 10px;
+    color: var(--white-color);
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "info-footer loyal-text"
+        "info-footer social-media"
+}
+
+footer>.info-footer {
+    grid-area: info-footer;
+}
+
+footer>.loyal-text {
+    grid-area: loyal-text;
+}
+
+footer>.social-media {
+    grid-area: social-media;
+}
+
+
+.info-footer {
+    border-right: 1px solid var(--white-color);
+}
+
+.info-footer .info {
+    margin: 2px 0;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+}
+
+.info img {
+    margin-right: 10px;
+    width: 24px;
+}
+
+.loyal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.loyal-text p {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+    text-align: center;
+    border-top: 1px solid var(--white-color);
+    padding: 0 5px;
+}
+
+.social-media p {
+    text-align: center;
+}
+
+.social-media div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media img {
+    margin: 0 5px
+}
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width:364px) {}
+
+@media screen and (min-width: 768px) {
+    /*footer-------------------------*/
+
+    .info-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .pte1 {
+        border-right: 1px solid var(--white-color);
+    }
+
+    .info-pte {
+        padding: 0 10px;
+    }
+
+    .info img {
+        width: 27px;
+    }
+
+    .loyal-text {
+        height: 100%;
+    }
+
+    .social-media {
+        border-top: none;
+        border-left: 1px solid var(--white-color);
+    }
+
+    .social-media img {
+        width: 32px;
+        margin: 0 10px;
+    }
+
+    footer {
+        grid-template-rows: 100%;
+        grid-template-columns: 55% auto auto;
+        grid-template-areas: "info-footer loyal-text social-media";
+    }
+}
+
+@media screen and (min-width: 1024px){
+    /*footer-----------------*/
+
+    footer{
+        font-size: 14.5px;
+    }
+
+    .info-pte{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info img{
+        width: 30px;
+    }
+
+    .social-media img{
+        width: 40px;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (min-width: 1200px){}
