@@ -258,7 +258,13 @@
             text-shadow: 1px 1px 1px var(--dark-color);
         }
 
-        .learnkahoot ul{
+
+        .learnkahoot h1{
+            margin: 20px;
+            text-align: center;
+        }
+
+        .learnkahoot p{
             display: flex;
             flex-direction: column;
             text-align: left;
@@ -274,7 +280,8 @@
         .learnkahoot img{
             display: flex;
             align-items: center;
-            width: 260px;
+            padding-bottom: 0px;
+            margin-left: 600px;
         }
 
 
@@ -323,8 +330,8 @@
 
 
         .pitbull h2{
-
-            background-color: var(--coral-color);
+            margin-top:15px ;
+            background-color: var(--greendark-color);
             box-shadow:  2px 2px 6px var(--dark-color);
             border-radius: 20px;
             text-align: center;
@@ -332,7 +339,12 @@
             padding: 20px;
             margin-left: 15px;
             margin-right: 15px;
+            color: var(--white-color);
         
+        }
+
+        .pitbull img{
+            height: 20px;
         }
 
         .pitbull-text{
@@ -347,23 +359,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            text-align: justify;
             margin-bottom: 20px;
-            border-bottom: 5px solid  var(--blue-color);
-            width: 280px;
+            width: 250px;
+            margin-top: 50px;
+            
         }
 
-
-
-
-
-
-
-
-
-
-
-
+        .pitbull-text img{
+            display: flex;
+            align-items: center;
+            width: 280px;
+            height: 250px;
+            margin-left: -50px;
+        }
 
 
         /*Estilos Foundation*/
@@ -663,6 +672,11 @@
             justify-content: space-around;
             
     
+    }
+
+    .pitbull-text p{
+        width: 80%;
+
     }
 
     #nav-dog{
@@ -976,6 +990,8 @@
         width: 800px;
         text-align: center; 
         font-size: 40px; 
+    
+
     }
 
     .learnkahoot ul{
@@ -1002,9 +1018,5 @@
             font-size: 30px;
         
     
-    }
-
-    .learnkahoot h1{
-        width: 00px;
     }
 }
