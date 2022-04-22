@@ -228,6 +228,12 @@ p{
     margin: 0px 15px;
 }
 
+#container-galery label:hover{
+    box-shadow: 1px 1px 3px var(--dark-color);
+    background-color: #8caef1;
+    color: black;
+}
+
 #container-galery .label-todos{
     margin-left: 20%;
 }
@@ -245,14 +251,17 @@ p{
 
 #perros:checked ~ .label-dog{
     background-color: #1B3C5A;
+    color: white;
 }
 
 #gatos:checked ~ .label-cat{
     background-color: #1B3C5A;
+    color: white;
 }
 
 #todos:checked ~ .label-todos{
     background-color: #1B3C5A;
+    color: white;
 }
 
 #gatos:checked ~ .adoption-galery .dog{
@@ -841,7 +850,13 @@ footer > .social-media {
     font-size: 20px;
 }
 
-.btn-enviar, #btn-enviar{
+.btn-enviar button:hover, #btn-enviar button:hover, .btn-enviar:hover i, #btn-enviar:hover i{
+    background-color:#215688;
+    transition-duration:300ms;
+    box-shadow: 2px 2px 5px #19191973;
+}
+
+.btn-enviar{
     display: flex;
     justify-content: center;
     margin: 10px 0;
