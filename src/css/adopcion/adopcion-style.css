@@ -471,15 +471,16 @@ button{
     list-style-image: url(../../assets/img-adopcion/adopcion/item-huella.svg);
 }
 
+
 footer{
     width: 100%;
     background-color: var(--blue-dark-color);
     padding: 10px;
     color: var(--white-color);
-    font-size: 12px;
+    font-size: 12.5px;
     display: grid;
-    grid-template-columns: 60% auto;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 54% auto;
+    grid-template-rows: 62% 35%;
     grid-template-areas:"info-footer loyal-text" 
                         "info-footer social-media"
 }
@@ -503,9 +504,6 @@ footer > .social-media {
 
 .info-footer .info{
     margin: 2px 0;
-}
-
-.info{
     width: 100%;
     display: flex;
 }
@@ -515,16 +513,21 @@ footer > .social-media {
     width: 24px;
 }
 
+.social-media strong{
+    display: none;
+}
+
 .loyal-text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 5px;
+    padding:2px;
     margin-left: 5px;
 }
 
 .loyal-text p{
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -550,6 +553,61 @@ footer > .social-media {
 
 .social-media img{
     margin:0 5px
+}
+
+.info-pte{
+    height: 50%;
+}
+
+.primary, .secondary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 700px){
+   .info-footer{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+   }
+
+   .primary{
+    border-right: 1px solid var(--white-color);
+   }
+
+   .info-pte{
+       padding: 0 10px;
+       height: 100%;
+   }
+
+   .info img{
+    width: 27px;
+    }
+
+   .loyal-text{
+      height: 100%;
+   }
+
+   .social-media{
+       border-top: none;
+       border-left: 1px solid var(--white-color);
+   }
+
+     .social-media strong{
+        display: block;
+    }
+
+   .social-media img{
+    width: 32px;
+    margin: 0 10px;
+    }
+
+   footer{
+       grid-template-rows: 100%;
+       grid-template-columns: 55% auto auto; 
+       grid-template-areas: "info-footer loyal-text social-media";
+   }
 }
 
 /*Kirara--------------------*/
@@ -1498,12 +1556,6 @@ textarea{
      .btn-enviar button{
          padding: 5px 30px;
      }
- 
-    footer{
-        grid-template-rows: 100%;
-        grid-template-columns: 55% auto auto; 
-        grid-template-areas: "info-footer loyal-text social-media";
-    }
  }
  
  @media screen and (min-width: 1024px){
@@ -1518,6 +1570,14 @@ textarea{
 
     #adoption h1{
         font-size: 40px;
+    }
+
+    #container-galery label{
+        padding: 5px 40px;
+    }
+
+    #container-galery .label-todos{
+        margin-left: 30%;
     }
 
     .adoption-galery{
@@ -1551,10 +1611,6 @@ textarea{
         width: 40%;
         float: left;
         margin: 10px 42px 0 0;
-    }
-
-    #container-galery .label-todos{
-        margin-left: 40%;
     }
 
     .list-requirement{
@@ -1756,25 +1812,27 @@ textarea{
     
     /*footer-----------------*/
 
-     footer{
-         font-size: 14.5px;
-     }
+    footer{
+        font-size: 14.5px;
+    }
+
+    .info-pte{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info img{
+        width: 30px;
+    }
+
+    .social-media img{
+        width: 40px;
+        margin: 0 15px;
+    }
+
+}
  
-     .info-pte{
-         width: 100%;
-         display: flex;
-         flex-direction: column;
-     }
- 
-     .info img{
-         width: 30px;
-     }
- 
-     .social-media img{
-         width: 40px;
-         margin: 0 15px;
-     }
- }
  
  @media screen and (min-width: 1200px){
 
@@ -1847,10 +1905,8 @@ textarea{
     }
 
     .slider-galery-pet .card img{
-        background-color: #FAC0BD;
         width: 25%;
     }
-
 
     .info-pet{
         padding-top: 10px;
@@ -1884,5 +1940,17 @@ textarea{
 
     .article-form{
         margin: 40px 0;
+    }
+
+    #container-galery label{
+        padding: 5px 60px;
+    }
+
+    .info-pte{
+        padding: 0 10%;
+    }
+
+    #container-galery .label-todos{
+        margin-left: 30%;
     }
  }
