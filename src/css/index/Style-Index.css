@@ -383,6 +383,15 @@ button:hover {
 
 @media screen and (min-width: 768px) {
 
+    .index-banner-mobile{
+        display: none;
+    }
+
+    /*estilos banner*/
+    .index-banner {
+        display: initial;
+    }
+
     /*botones*/
 
     button {
