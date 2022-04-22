@@ -504,8 +504,6 @@ footer > .social-media {
     margin:0 5px
 }
 
-
-
 /*Kirara--------------------*/
 
 #peludito h2{
@@ -691,7 +689,6 @@ footer > .social-media {
     display: none;
 }
 
-
 .slider-galery-pet .container{
     width: 100%;
     max-width: 800px;
@@ -751,7 +748,6 @@ footer > .social-media {
     z-index: 1;
 }
 
-
 .cat-bton{
     display: flex;
     justify-content: center;
@@ -783,7 +779,6 @@ footer > .social-media {
 .ocult{
     display: none;
 }
-
 
 #adoption-process .bg-documents{
     background: url(../../assets/img-adopcion/adopcion/bd-documents.svg);
@@ -940,8 +935,6 @@ label img:hover{
     width: 50%;
     text-align: end;
 }*/
-
-
 
 /*Formulario--------------------------------*/
 
@@ -1143,8 +1136,21 @@ textarea{
     padding: 40px 40px 20px;
 }
 
+.modalP{
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.modalP p{
+    text-align: center
+}
+
 .modal:target .modalP{
     animation: aparecer 1.2s 1s backwards;
+}
+
+.modalP{
+    background-color: #8caef151;
 }
 
 @keyframes aparecer {
@@ -1167,7 +1173,7 @@ textarea{
 .modalClose{
     display: inline-block;
     border: 1px solid #333;
-    padding: 1em 2em;
+    padding: 15px;
     text-decoration: none;
     font-weight:700;
     color: white;
@@ -1175,8 +1181,32 @@ textarea{
     border-radius: 0.4em;
 }
 
-@media screen and (min-width: 768px){
+#adoption-kirara .modalContainer{
+    margin: 140px auto 40px;
+    background:url(../../assets/img/adopcion/bg-modal.svg) white no-repeat;
+    background-size:80%;
+    background-position: center;
+    width: 90%;
+    scroll-snap-type: none;
+    overflow-x: hidden;
+    max-width: 700px;
+    max-height: 70%;
+    padding: 2.5em 1.5em;
+    border-radius:1em ;
+}
 
+#adoption-kirara .modal:target .modalContainer{
+    animation: show 1s 0.5s backwards;
+}
+
+#adoption-kirara figure{
+    background: url(../../assets/img/adopcion/circle.svg) no-repeat;
+    background-position: center;
+    background-size: 120px;
+}
+
+@media screen and (min-width: 768px){
+    
     /*Adopción-----------------------*/
 
     .adoption-galery{
@@ -1232,7 +1262,6 @@ textarea{
         position: relative;
         margin: auto;
     }
-
 
     .pet-resumen{
         margin-top: -30px;
