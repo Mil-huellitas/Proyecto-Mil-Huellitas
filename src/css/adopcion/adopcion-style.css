@@ -620,6 +620,15 @@ footer > .social-media {
 }
 
 @media screen and (min-width: 320px) and (max-width:364px){
+
+    #container-galery label{
+        margin: 0px 4px;
+    }
+
+    #container-galery .label-todos{
+        margin-left: 13%;
+    }
+
     .history-pet{
         display: none;
         background-color: var(--blue-dark-color);
@@ -1162,12 +1171,6 @@ textarea{
       100% {
         margin-left: 0%;
       }
-      25%, 75%{
-        transform: scale(0.8);
-    }
-    50%{
-        transform: scale(1.1);
-    }
 }
 
 .modalClose{
