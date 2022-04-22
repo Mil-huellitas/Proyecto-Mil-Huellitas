@@ -36,44 +36,53 @@
 /*buttons*/
 
 .index_buttons {
-    border: 2px solid red;
+    /*border: 8px solid rgb(255, 0, 242);*/
     width: 90%;
-    height: 500px;
     margin: 0 auto;
     display: grid;
     grid-template-areas:
         'material economica'
         'apadrinamiento emprendimiento';
 
-    grid-auto-rows: 50%;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
+.index_buttons-pc {
+    display: none;
+
+}
 
 button {
-
+    position: relative;
     background-size: cover;
     background-position: center;
+    background-position-y: bottom;
 
     margin: 0 auto;
     cursor: pointer;
-    width: 100%;
-    height: 90%;
+
     transition: all 0.2s ease-in-out;
     border: none;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
+}
+
+button h3 {
+    position: absolute;
     color: #ffffff;
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 150%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+button img {
+    width: 100%;
 }
 
 button:hover {
@@ -114,6 +123,7 @@ button:hover {
 #index-btn-emprendimiento {
     background-image: url(../../assets/img/index/index-btn-A.emprendimiento.png);
     grid-area: emprendimiento;
+
 }
 
 #index-btn-emprendimiento:hover {
@@ -127,10 +137,12 @@ button:hover {
 
 /*styles ubicación*/
 
-.index-heder h2{
+.index-heder h1 {
     color: #2970CA;
     margin: 1rem;
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .index_container-maps {
@@ -154,7 +166,7 @@ button:hover {
 
 .index_container-maps ._container-maps .-map {
     position: absolute;
-    bottom:  0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -168,7 +180,7 @@ button:hover {
 .index_container-maps ._container-maps:hover {
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
     transition-delay: 0s;
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .index-map {
@@ -210,10 +222,12 @@ button:hover {
     color: rgb(255, 255, 255);
     padding: 5px;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 
-._container-maps h2, .index_container-maps ._container-maps .index_text h2,
+._container-maps h2,
+.index_container-maps ._container-maps .index_text h2,
 .index_container-maps ._container-maps .index_text h4,
 .index_container-maps ._container-maps .index_text a {
     opacity: 0;
@@ -222,7 +236,8 @@ button:hover {
     margin-top: 0;
 }
 
-._container-maps h2, .index_container-maps ._container-maps:hover .index_text h2 {
+._container-maps h2,
+.index_container-maps ._container-maps:hover .index_text h2 {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.1s;
@@ -231,6 +246,7 @@ button:hover {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-align: center;
+    bottom: 0;
 }
 
 
@@ -252,7 +268,9 @@ button:hover {
 .index_container-maps ._container-maps:hover .index_text a {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 0.9s
+    transition-delay: 0.9s;
+    margin-top: 1rem;
+
 }
 
 .index_container-maps ._container-maps .index_text h4 {
@@ -269,7 +287,92 @@ button:hover {
 
 
 
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 768px) {
+
+    /*botones*/
+
+    button {
+        display: flex;
+        justify-content: flex-start;
+        bottom: 0;
+    }
+
+    button h3 {
+        font-size: 2rem;
+        text-align: center;
+        bottom: 20%;
+        left: 15%;
+        opacity: 0;
+    }
+
+    .index_buttons {
+        display: none;
+    }
+
+    .index_buttons-pc {
+        display: initial;
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            'material economica'
+            'apadrinamiento emprendimiento';
+
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    #index-btn-pc-D-material {
+        background-image: url(../../assets/img/index/index-pc-btn-D.material.png);
+        grid-area: material;
+    }
+
+    #index-btn-pc-D-material:hover {
+        background-image: url(../../assets/img/index/index-pc-btn-D.material-hover.png);
+    }
+
+
+    #index-btn-pc-D-economica {
+        background-image: url(../../assets/img/index/index-pc-btn-D.economica.png);
+        grid-area: economica;
+    }
+
+    #index-btn-pc-D-economica:hover {
+        background-image: url(../../assets/img/index/index-pc-btn-D.economica-hover.png);
+    }
+
+
+    #index-btn-pc-Apadrinamiento {
+        background-image: url(../../assets/img/index/index-pc-btn-Apadrinamiento.png);
+        grid-area: apadrinamiento;
+    }
+
+    #index-btn-pc-Apadrinamiento:hover {
+        background-image: url(../../assets/img/index/index-pc-btn-Apadrinamiento-hover.png);
+    }
+
+
+    #index-btn-pc-emprendimiento {
+        background-image: url(../../assets/img/index/index-pc-btn-A.emprendimiento.png);
+        grid-area: emprendimiento;
+
+    }
+
+    #index-btn-pc-emprendimiento:hover {
+        background-image: url(../../assets/img/index/index-pc-btn-A.emprendimiento-hover.png);
+    }
+
+
+
+
+
+
+
+
+
+    /*mapa*/
     .index_container-maps {
         flex-direction: row;
     }
@@ -279,12 +382,22 @@ button:hover {
         height: 400px;
         margin: 20px 0;
     }
-    
+
+    .index-heder h1 {
+        font-size: 2rem;
+    }
+
 }
 
 
 
 @media screen and (min-width: 1024px) {
+
+
+
+
+
+
 
 
 
@@ -295,16 +408,14 @@ button:hover {
     }
 
 
-    .index_buttons {
-        display: none;
+    
+
+    .index_container-maps ._container-maps:hover {
+        transform: scale(1.1);
+        margin-bottom: 4rem;
     }
 
 }
 
 
-@media screen and (min-width: 1200){
-    
-}
-
-
-
+@media screen and (min-width: 1200) {}
