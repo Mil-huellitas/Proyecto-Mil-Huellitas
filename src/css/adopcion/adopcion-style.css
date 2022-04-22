@@ -616,6 +616,11 @@ footer > .social-media {
     margin: 10px;
 }
 
+#peludito h1{
+    margin: 20px;
+    font-size: 30px;
+}
+
 .bton-folder{
     text-align: center;
     margin-bottom: 0;
@@ -1392,6 +1397,11 @@ textarea{
         max-width: 750px;
     }
 
+    #peludito h1{
+        margin: 20px;
+        font-size: 40px;
+    }
+
     /*pet-adoption*/
     .adopt-pet{
         min-width: 280px;
@@ -1597,6 +1607,11 @@ textarea{
 
     #adoption-requirement img{
        margin: 20px 70px;
+    }
+
+    #peludito h1{
+        margin: 20px;
+        font-size: 50px;
     }
 
     .pet{
