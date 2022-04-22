@@ -94,9 +94,9 @@ main {
 
 .nav_menu-items li a.active,
 .nav_menu-items li a:hover {
-    color: #09ff00;
+    color: #4383d6;
     transition: .3s;
-    text-shadow: 1px 1px 10px #09ff0038;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.22);
 }
 
 
