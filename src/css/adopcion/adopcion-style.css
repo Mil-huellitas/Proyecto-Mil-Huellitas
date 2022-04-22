@@ -205,6 +205,7 @@ p{
 
 #adoption h1{
     margin:12px 0;
+    font-size: 30px;
 }
 
 #adoption p{
@@ -217,6 +218,44 @@ p{
 
 #main-adoption{
     padding: 0;
+}
+
+.banner{
+    grid-column: 1/5;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+.banner ul{
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: slide 16s infinite  ease-in-out;
+  }  
+  
+.banner li{
+  list-style: none;   
+  width: 100%;
+
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
 }
 
 #container-galery label{
@@ -1349,9 +1388,10 @@ textarea{
         grid-template-areas:"step2 formulario";
     }
 
-    .step1 .btn-enviar button{
+    .step1 btn-enviar button{
         padding: 5px 18px 5px 22px;
     }
+
     .step1 .btn-enviar i{
         padding: 6px 4px 4px 8px;
     }
@@ -1454,6 +1494,10 @@ textarea{
      width: 32px;
      margin: 0 10px;
      }
+
+     .btn-enviar button{
+         padding: 5px 30px;
+     }
  
     footer{
         grid-template-rows: 100%;
@@ -1470,6 +1514,10 @@ textarea{
         margin: 10px 60px;
         text-align: center;
         padding: 0 40px;
+    }
+
+    #adoption h1{
+        font-size: 40px;
     }
 
     .adoption-galery{
