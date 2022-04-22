@@ -144,7 +144,6 @@ main{
 .buttons .button_active{
     background-color: var(--blue-dark-color);
 }
-
 .buttons a{
     color: var(--white-color);
 }
@@ -301,6 +300,195 @@ main{
     left:-15px;
     width:106px;
 }
+
+/*ESTILOS APADRINA*/
+.title_ap{
+font-weight: 600;
+font-size: 13px;
+text-align: center;
+color: var(--blue-medium-color);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.general_container{
+    position: relative;
+}
+
+.background_footprints_ap_nine, .background_footprints_ap_ten, .background_footprints_ap_eleven,.background_footprints_ap_twelve{
+    visibility: hidden;
+    position: absolute;
+    top: 1px;
+    width: 60px;
+}
+
+.galerry_ap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    row-gap: 45px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.background_footprints_ap_one{
+    position: absolute;
+    left:6px;
+    top:50px;
+}
+
+.background_footprints_ap_two{
+    position: absolute;
+    left: 100px;
+    top:105px;
+}
+
+.background_footprints_ap_three{
+    position: absolute;
+    right: 8px;
+    top: 45px;
+}
+
+.background_footprints_ap_four{
+    position: absolute;
+    top: 160px;
+    left: 122px;
+    z-index: 1;
+}
+
+.background_footprints_ap_five{
+    position: absolute;
+    left:15px;
+    top:550px;
+    z-index: 1;
+}
+
+.background_footprints_ap_six{ 
+    position: absolute;
+    top:175px;
+    z-index: 1;
+    right: 125px;
+}
+
+.background_footprints_ap_seven{
+    position: absolute;
+    right:125px;
+    top:590px;
+    z-index: 1;          
+}
+
+.background_footprints_ap_eight{
+    position: absolute;
+    right:18px;
+    top:690px;
+    z-index: 1;
+}
+
+.background_footprints_ap_thirteen{
+    position: absolute;
+    right:8px;
+    top:560px;
+    z-index: 1; 
+}
+
+.background_footprints_ap_fourteen{
+    position: absolute;
+    left:15px;
+    top:310px;
+    z-index: 1; 
+}
+
+.Card_Doneco__text__ap{
+    width: 75px;
+    position: absolute;
+    top: -16px;
+    left: 0px;
+}
+
+.Card_Doneco__text__plan{
+    width:50px;
+    position: absolute;
+    top: -17px;
+    left: 11px;
+}
+
+.text_ap_one{
+    width:70px;
+    position: absolute;
+    top: 65px;
+    left: 4px;
+}
+
+.text_ap_two{
+    width:100px;
+    position: absolute;
+    top: 50px;
+    left: -9px;
+}
+
+.text_ap_three{
+    width:100px;
+    position: absolute;
+    top: 50px;
+    left: -12px;
+}
+
+.text_ap_four{
+    width:90px;
+    position: absolute;
+    top: 55px;
+    left: -7px;
+}
+
+.text_ap_five{
+    width:70px;
+    position: absolute;
+    top: 65px;
+    left: 4px;
+}
+.text_ap_six{
+    width:70px;
+    position: absolute;
+    top: 65px;
+    left: 4px;
+}
+.text_ap_seven{
+    width:80px;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+}
+
+.text_ap_eight{
+    width:70px;
+    position: absolute;
+    top: 65px;
+    left: 4px;
+}
+.text_ap_nine{
+    width:78.28px;
+    position: absolute;
+    top: 63px;
+}
+.text_ap_ten{
+    width:100px;
+    position: absolute;
+    top: 50px;
+    left: -12px;
+}
+.text_ap_eleven{
+    width:100px;
+    position: absolute;
+    top: 53px;
+    left: -12px;
+}
+
+.text_ap_twelve{
+    width:100px;
+    position: absolute;
+    top: 50px;
+    left: -12px;
+}
+
 @media screen and (min-width:768px){
     .banner_Donacion{
         min-height: 283px;
@@ -429,6 +617,7 @@ main{
     .Card_Doneco{
         outline: 24.6px solid var(--blue-light);
         width: 120.1px;
+        border-radius: 50%;
     }
 
     .Container_Doneco__text{
@@ -495,6 +684,127 @@ main{
     left:-22px;
     width:166px;
 }
+
+/*ESTILOS APADRINA*/
+.title_ap{
+    font-size: 17px;
+    }
+    
+    .background_footprints_ap_one,
+    .background_footprints_ap_two,
+    .background_footprints_ap_three,.background_footprints_ap_four ,   
+    .background_footprints_ap_six,    
+    .background_footprints_ap_seven,    
+    .background_footprints_ap_fourteen     
+    {
+    visibility: hidden;
+    }
+    
+    .galerry_ap{
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 90px;
+        margin: 30px 0;
+    }
+    
+    .background_footprints_ap_nine{
+        visibility: visible;
+        left: 12px;
+        top: 100px;
+        width: 70px;
+        z-index: 1;
+    }
+    .background_footprints_ap_ten{
+        visibility: visible;
+        left: 185px;
+        top:40px;
+        width: 130px;
+    } 
+    .background_footprints_ap_eleven{
+        visibility: visible;
+        right: 230px;
+        top:245px;
+        width: 95px;
+    }
+    .background_footprints_ap_twelve{
+        visibility: visible;
+        right: 8px;
+        width: 70px;
+        top: 290px;
+    }
+    .background_footprints_ap_five{
+        position: absolute;
+        left:700px;
+        top:500px;
+        z-index: 1;
+        width: 50px;
+    }
+    
+    .background_footprints_ap_eight{
+        right:265px;
+        top:65px;
+        width: 50px;
+        z-index: 1; 
+    }
+    
+    .background_footprints_ap_thirteen{
+        right:25px;
+        top:45px;
+        width: 50px;
+        z-index: 1; 
+    }
+    
+    .Card_Doneco__text__ap{
+        width: 125px;
+        position: absolute;
+        top: -24px;
+        left: -4px;
+    }
+    
+    .Card_Doneco__text__plan{
+        width:80px;
+        position: absolute;
+        top: -28px;
+        left: 16px;
+    }
+    
+    .text_ap_one ,.text_ap_five,
+    .text_ap_six,.text_ap_eight{
+        width:105px;
+        position: absolute;
+        top: 104px;
+        left: 6px;
+    }
+    
+    .text_ap_two,
+    .text_ap_three, .text_ap_ten,
+    .text_ap_eleven, .text_ap_twelve{
+        width:156px;
+        top: 82px;
+        left: -17px;
+    }
+    
+    .text_ap_two{
+        left: -15px;
+    }
+
+    .text_ap_four{
+        width:140px;
+        top: 90px;
+        left: -9px;
+    }
+    
+    .text_ap_seven{
+        width:130px;
+        top: 87px;
+        left: 0px;
+    }
+
+    .text_ap_nine{
+        width:127px;
+        top: 98px;
+        left: -3px;;
+    }
+
 }
 
 @media screen and (min-width:1024px){
@@ -682,6 +992,107 @@ main{
     left:-29px;
     width:225px;
 }
+
+/*ESTILOS APADRINA*/
+.title_ap{
+    font-size: 22px;
+    margin: 10px;
+    }
+    
+    .background_footprints_ap_nine{
+        left: 12px;
+        top: 100px;
+        width: 90px;
+        z-index: 1;
+    }
+    .background_footprints_ap_ten{
+        left: 265px;
+        top:60px;
+        width: 170px;
+    } 
+    .background_footprints_ap_eleven{
+        right:295px;
+        top:245px;
+        width: 130px;
+    }
+    .background_footprints_ap_twelve{
+        right: 8px;
+        width: 80px;
+        top: 330px;
+    }
+    .background_footprints_ap_five{
+        left:930px;
+        top:590px;
+        z-index: 1;
+        width: 70px;
+    }
+    
+    .background_footprints_ap_eight{
+        right:365px;
+        top:95px;
+        width: 70px;
+        z-index: 1; 
+    }
+    
+    .background_footprints_ap_thirteen{
+        right:25px;
+        top:65px;
+        width: 70px;
+        z-index: 1; 
+    }
+    
+    .Card_Doneco__text__ap{
+        width: 165px;
+        position: absolute;
+        top: -34px;
+        left: -1px;
+    }
+    
+    .Card_Doneco__text__plan{
+        width:110px;
+        position: absolute;
+        top: -38px;
+        left: 23px;
+    }
+    
+    .text_ap_one ,.text_ap_five,
+    .text_ap_six,.text_ap_eight{
+        width:135px;
+        position: absolute;
+        top: 145px;
+        left: 14px;
+    }
+    
+    .text_ap_two,
+    .text_ap_three, .text_ap_ten,
+    .text_ap_eleven, .text_ap_twelve{
+        width:215px;
+        top: 112px;
+        left: -24px;
+    }
+
+    .text_ap_two{
+        left: -18px;
+    }
+
+    .text_ap_four{
+        width:190px;
+        top: 125px;
+        left: -12px;
+    }
+    
+    .text_ap_seven{
+        width:170px;
+        top: 123px;
+        left: 2px;
+    }
+
+    .text_ap_nine{
+        width:167px;
+        top: 135px;
+        left: 0px;;
+    }
+
 }
 
 @media screen and (min-width:1200px){
@@ -772,6 +1183,109 @@ main{
     
     .background_footprints_twelve{
         right:46px;
+    }
+
+    /*ESTILOS APADRINA*/
+    .title_ap{
+    font-size: 25px;
+    margin: 10px;
+    }
+
+    .galerry_ap{
+        width:95%;
+        margin: 50px auto;
+    }
+    
+    .background_footprints_ap_nine{
+        left: 55px;
+        width: 100px;
+    }
+    .background_footprints_ap_ten{
+        left:305px;
+        top:60px;
+        width: 185px;
+    } 
+    .background_footprints_ap_eleven{
+        right:365px;
+        top:245px;
+        width: 155px;
+    }
+    .background_footprints_ap_twelve{
+        right: 48px;
+        width: 95px;
+        top: 360px;
+    }
+    .background_footprints_ap_five{
+        left:1030px;
+        top:650px;
+        z-index: 1;
+        width: 90px;
+    }
+    
+    .background_footprints_ap_eight{
+        right:425px;
+        top:95px;
+        width:90px;
+        z-index: 1; 
+    }
+    
+    .background_footprints_ap_thirteen{
+        right:55px;
+        top:65px;
+        width: 90px;
+        z-index: 1; 
+    }
+    
+    .Card_Doneco__text__ap{
+        width: 165px;
+        position: absolute;
+        top: -34px;
+        left: -1px;
+    }
+    
+    .Card_Doneco__text__plan{
+        width:110px;
+        position: absolute;
+        top: -38px;
+        left: 23px;
+    }
+    
+    .text_ap_one ,.text_ap_five,
+    .text_ap_six,.text_ap_eight{
+        width:135px;
+        position: absolute;
+        top: 145px;
+        left: 14px;
+    }
+    
+    .text_ap_two,
+    .text_ap_three, .text_ap_ten,
+    .text_ap_eleven, .text_ap_twelve{
+        width:215px;
+        top: 112px;
+        left: -24px;
+    }
+
+    .text_ap_two{
+        left: -18px;
+    }
+
+    .text_ap_four{
+        width:190px;
+        top: 125px;
+        left: -12px;
+    }
+    
+    .text_ap_seven{
+        width:170px;
+        top: 123px;
+        left: 2px;
+    }
+
+    .text_ap_nine{
+        width:167px;
+        top: 135px;
+        left: 0px;;
     }
 
 }
