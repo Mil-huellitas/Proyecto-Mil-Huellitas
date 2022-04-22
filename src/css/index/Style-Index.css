@@ -279,6 +279,42 @@ button:hover {
 
 
 
+/*style equipo*/
+
+.carrusel {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel-fotos {
+    display: flex;
+    gap: 0px;
+    overflow: auto;
+    width: 100vw;
+
+}
+
+
+.carrusel-fotos img {
+    background: linear-gradient(92.3deg, #1B3C5A 14.34%, #2970CA 69.38%);
+    ;
+    border: 4px solid #1B3C5A;
+    width: 150%;
+    max-width: 531px;
+    min-width: 210px;
+}
+
+.carrusel-menu {
+    display: none;
+}
+
 
 
 
@@ -387,6 +423,33 @@ button:hover {
         font-size: 2rem;
     }
 
+
+
+
+    /*style nosotros*/
+    .carrusel-fotos {
+        overflow: auto;
+        gap: 5px;
+        width: 90%;
+    }
+
+    .carrusel-fotos img {
+        width: 500px;
+    }
+
+    .carrusel-menu {
+        display: block;
+    }
+
+    .carrusel-menu img {
+        box-sizing: border-box;
+        width: 50px;
+        border: 4px solid #2970CA;
+    }
+
+    .carrusel-menu img:hover {
+        border: none;
+    }
 }
 
 
@@ -408,7 +471,7 @@ button:hover {
     }
 
 
-    
+
 
     .index_container-maps ._container-maps:hover {
         transform: scale(1.1);
